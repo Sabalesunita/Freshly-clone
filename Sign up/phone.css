@@ -1,0 +1,78 @@
+@media screen and (max-width:1200px){
+    .detail{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ptag{
+        margin-left: 15px;
+    }
+    .right{
+        margin-left: 80px;
+    }
+}
+@media  screen and (max-width:800px) {
+    .box img{
+        display: block;
+        width: 200px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        
+    }
+    .h1h1{
+        font-size: 2.2em;
+    }
+    .h2{
+        font-size: 1.3em;
+    }
+    .detail{
+        grid-template-columns: 1fr;
+    }
+    .zipinput{
+        width: 90%;
+    }
+    .box{
+        top: 16.5%;
+    }
+    img{
+        display: none;
+    }
+}
+@media screen and (max-width:425px){
+    .box{
+        width: 85%;
+        left: 7%;
+    }
+    .box img{
+        width: 100px;
+    }
+    .cust{
+        display: none;
+    }
+    .ptag{
+        margin-left: 4px;
+    }
+    .right{
+        margin-left: -80px;
+    }
+    .h1h1{
+        font-size: 1.2em;
+    }
+    .h2{
+        font-size: 0.9em;
+    }
+    .detail{
+        margin-left: 10px;
+    }
+    .emailinput{
+        padding: 10px;
+    }
+    .zipinput{
+        padding: 10px;
+    }
+    .h1line{
+        font-size: 20px;
+    }
+    .a_question{
+        font-size: 14px;
+    }
+}

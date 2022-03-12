@@ -1,0 +1,77 @@
+@media screen and (max-width:1300px) {
+    .mainitems{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:1000px) {
+    .mainitems{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:780px) {
+   #onefoodbox {
+       display: flex;
+       flex-direction: column;
+   }
+   .mainitems{
+    grid-template-columns: repeat(2,1fr);
+    overflow: auto;
+}
+#hides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    height: 762px;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    margin: auto;
+    width: 100%;
+}
+.right{
+    margin: auto;
+    width: 100%;
+}
+.mainitems{
+    height: 700px;
+}
+}
+@media screen and (max-width:500px) {
+    .mainitems{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #onefoodbox {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #foodimage{
+        width: 100%;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top>div{
+        margin: 9px 0px;
+    }
+    .main{
+        width: 100%;
+    }
+    .left{
+        width: 84%;
+    }
+   
+}
+@media screen and (max-width:250px){
+    .maintop{
+        display: flex;
+        flex-direction: column;
+    }
+}

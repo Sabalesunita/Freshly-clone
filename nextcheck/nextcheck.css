@@ -1,0 +1,244 @@
+
+    * {
+        font-family: FavoritFreshly, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        background-color: rgb(255, 253, 247);
+    }
+
+    .maincontainer {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    form {
+
+        background-color: white;
+        display: grid;
+        padding: 50px;
+        grid-gap: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        grid-template-areas:
+            "h2 h2 h2 h2 h2 h2 a a a a a a"
+            "f f f f f f l l l l l l"
+            "f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1"
+            "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+            "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+            "c c c c c c s s s s z z"
+            "p p p p p p p p p p p p"
+            "e e e e e e e e e e e e"
+            "i i i i i i i i i i i i"
+            "n n n n n n n n n n n n"
+    }
+
+    .firstname {
+        grid-area: f;
+    }
+
+    .lastname {
+        grid-area: l;
+    }
+
+    .fullname {
+        grid-area: f1;
+    }
+
+    .addressline1 {
+        grid-area: a1;
+    }
+
+    .addressline2 {
+        grid-area: a2;
+    }
+
+    .city {
+        grid-area: c;
+    }
+
+    .state {
+        grid-area: s;
+    }
+
+    .zip {
+        grid-area: z;
+    }
+
+    .phone {
+        grid-area: p;
+    }
+
+    .email {
+        grid-area: e;
+        border-bottom: 1px solid gray;
+    }
+
+    .next {
+        grid-area: n;
+    }
+
+    .h2 {
+        grid-area: h2;
+    }
+
+    input {
+        width: 100%;
+        height: 25px;
+        border-radius: none;
+
+    }
+
+    h4 {
+        margin: 0px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    #check {
+        width: 10px;
+        height: 10px;
+    }
+
+    #next {
+        height: 40px;
+        background-color: rgb(42, 109, 255);
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+        border: none;
+    }
+
+    .changea {
+        grid-area: a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    a {
+        color: rgb(42, 109, 255);
+    }
+
+    h1 {
+        margin-left: 100px;
+    }
+
+    .info {
+        grid-area: i;
+        border-bottom: 1px solid gray;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    #method1 {
+        margin-left: -50%;
+        height: 20px;
+
+    }
+
+    img {
+        margin-left: -48%;
+        height: 30px;
+        width: 50px;
+    }
+
+    #method2 {
+        margin-left: -50%;
+        height: 20px;
+    }
+
+    #img1 {
+        margin: 0px;
+
+    }
+
+    .margin {
+        margin-bottom: 30px;
+    }
+
+    .box {
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 30px;
+    }
+
+
+    .flex>h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #deliv {
+        margin-bottom: 15px;
+    }
+
+    select {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    #line {
+        border-bottom: 1px solid gray;
+    }
+
+    .line {
+        border-bottom: 1px solid gray;
+    }
+
+    .container2 {
+        width: 80%;
+    }
+
+    #newchange {
+        margin-top: 15px;
+
+    }
+
+    /* addedd data style */
+
+    #changeme {
+        width: 100px;
+        height: 70px;
+        margin-right: 30px;
+    }
+
+    .box2>div {
+        display: flex;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        margin-left: 160px;
+
+    }
+
+    @media only screen and (min-width:0px) and (max-width:320px) {
+        .maincontainer {
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .container2 {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (min-width:321px) and (max-width:720px) {
+        .maincontainer {
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .container2 {
+            width: 100%;
+        }
+    }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1o5IFvpm5Xk6fzi2cwiYT22tzY-UKMz1Dkyj31jj0jih97-7"
+        type="image/x-icon">
+    <title>Meal Delivery Services For Offices | Freshly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="/addcart_checkout/phone.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".default_option").click(function () {
+                $(this).parent().toggleClass("active");
+            })
+
+            $(".select_ul li").click(function () {
+                var currentele = $(this).html();
+                $(".default_option li").html(currentele);
+                $(this).parents(".select_wrap").removeClass("active");
+            })
+        });
+    </script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <div id="back"> Back</div>
+                <! connect to Sunita's page here>
+                    <div id="date">
+                        <select onchange="datefun()" id="calendar">
+                            <option value="Wednesday, Jan26">Wednesday, Jan26</option>
+                            <option value="Friday, Jan28">Friday, Jan28</option>
+                            <option value="Saturday, Jan29">Saturday, Jan29</option>
+                            <option value="Sunday, Jan30">Sunday, Jan30</option>
+                            <option value="Monday, Jan31">Monday, Jan31</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="customer">
+                            <! copy that customer support you did>
+                                <option id="customerOne" value=""><i class="far fa-question-circle"></i>Customer Support
+                                </option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                        </select>
+                    </div>
+            </div>
+            <div class="main">
+                <div class="maintop">
+                    <p id="choosemeal">Choose Meals</p>
+                    <button id="filter">Sort & Filters</button>
+                </div>
+                <div id="mainMid">
+                    <div id="hides">
+                        <div>Filter by:</div>
+                        <div>
+                            <h5>Diet <p>(Select one or more)</p>
+                            </h5>
+                            <form id="diet" action="">
+                                <input type="radio" id="glutenfree" name="diets" value="Gluten-Free">
+                                <label for="glutenfree">Gluten-Free</label><br>
+
+                                <input type="radio" id="plant" name="diets" value="Plant-Based">
+                                <label for="plant">Plant-Based</label><br>
+
+                            </form>
+
+                        </div>
+                        <div id="categories">
+                            <h5>Categories</h5>
+                            <form id="cate" action="">
+                                <div>
+                                    <input type="radio" name="categories" id="fullmenu" value="full">
+                                    <label for="fullmenu"><img
+                                            src="https://res.cloudinary.com/freshly/image/upload/w_22,h_26/v1617112144/full-menu_3x_tjseuc.png">Full
+                                        Menu</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="categories" id="freshlyfit" value="freshlyfit">
+                                    <label for="freshlyfit"><img
+                                            src="https://res.cloudinary.com/freshly/image/upload/v1610576009/production-weekly-menu-section-image-8dbbc60a-71ff-422b-bbbd-2f5f39723f52.png">FreshlyFit</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="categories" id="purelyplant" value="purelyplant">
+                                    <label for="purelyplant"><img
+                                            src="https://res.cloudinary.com/freshly/image/upload/v1626368012/production-weekly-menu-section-image-df7515f7-9745-497e-80f7-035d653ccaff.png">Purely
+                                        Plant</label>
+
+                                </div>
+                                <div>
+                                    <input type="radio" name="categories" id="signature" value="signaturecollection">
+                                    <label for="signature"><img
+                                            src="https://res.cloudinary.com/freshly/image/upload/v1610576008/production-weekly-menu-section-image-cfe122a2-0a30-4276-af7e-87034e316e3e.png">Signature
+                                        Collection</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="categories" id="pro_sli" value="protein&slides">
+                                    <label for="protein"><img
+                                            src="https://res.cloudinary.com/freshly/image/upload/v1617663486/production-weekly-menu-section-image-96c9cd78-c10d-493f-81f6-72f856ceed18.png">Protein
+                                        & Slides</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div style="font-weight: bold;">Sort by</div>
+                        <div>
+                            <h5>Nutritional Macros</h5>
+                            <form id="nutritional" action="">
+                                <input type="radio" name="nutritional_macros" id="default" onchange="unchanged()"
+                                    value="default">
+                                <label for="default">Default</label><br>
+                                <input type="radio" name="nutritional_macros" id="calories" onchange="ascendcal()"
+                                    value="cal">
+                                <label for="calories">Calories</label><br>
+                                <input type="radio" name="nutritional_macros" id="carbs" onchange="ascendcarbs()"
+                                    value="carbs">
+                                <label for="carbs">Carbs</label><br>
+                                <input type="radio" name="nutritional_macros" id="protein" onchange="ascendprotein()"
+                                    value="protein">
+                                <label for="protein">Protein</label><br>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div id="allitems" class="mainitems">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightTop">
+                <div class="date">
+                    <div>My delivery for :</div>
+                    <div class="rightDate"></div>
+                </div>
+                <div id="clear">Clear all</div>
+            </div>
+            <div class="rightMid">
+                <div class="addedToCart">
+
+                </div>
+                <div id="summary"></div>
+            </div>
+            <div class="rightBottom">
+                <div class="firstLine">
+                    <div id="sub"></div>
+                    <div class="cartSymbol">
+                        <div><i class="fa fa-shopping-cart" style="font-size:25px"></i></div>
+                        <div id="countNumber"></div>
+                    </div>
+                </div>
+                <div class="secondLineDiv">
+                    <p class="secondLine">Add 4 to Continue</p>
+                </div>
+                <div class="offer"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="checkout.js"></script>

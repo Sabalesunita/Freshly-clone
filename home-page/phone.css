@@ -1,0 +1,290 @@
+
+@media screen and (min-width:1091px) {
+    #card2 >div{
+        /* bottom: 500px; */
+        top: 600px;
+    }    
+}
+@media screen and (max-width:1090Px){
+    #start #container{
+        width: 100%;
+    }
+    nav .left img{
+        margin-top: -251px;
+        vertical-align: top;
+    }
+    nav #nav-menu{
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 100px;
+        /* background-color: white; */
+    }
+    nav #nav-menu a{
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    nav #nav-menu .middle,nav #nav-menu .right{
+        flex-direction: column;
+        display: flex;
+    }
+    nav #nav-menu .right .over{
+        width: 100px;
+        padding: 5px 10px;
+        /* background: none; */
+        /* padding: 10px; */
+        /* color: black; */
+    }
+    .v-hidden{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    #card2 >div{
+        /* bottom: 500px; */
+        top: 600px;
+    }
+       #start #container  div:nth-child(1){
+        background-image: url(https://media.istockphoto.com/photos/pasta-kraft-brown-paper-carton-box-take-away-photography-picture-id1329984385?b=1&k=20&m=1329984385&s=170667a&w=0&h=9bixMleflueBbU5A7pog-Wt0NL1FKCGaAtCrcXGDjfc=);
+        left: 0px;
+        margin: auto;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    #start #container  div:nth-child(2){
+        background-color: rgb(255, 253, 247);
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-top: 95px;
+        padding: 25px 40px;
+        box-sizing: border-box;
+    }
+    #details #container{
+        width: 100%;
+    }
+    #details #container >div:nth-child(2){
+        /* content: ""; */
+        background-image: url(https://media.istockphoto.com/photos/two-fresh-salad-bowls-picture-id919666108?b=1&k=20&m=919666108&s=170667a&w=0&h=7_YJbzzzL6mHDyiTZ-U34hQPZ4R_rHVHcCoLLaemye8=);
+        /* position: absolute; */
+        margin: auto;
+        right: 0px;
+        /* height: 800px; */
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    #details #container >div:nth-child(1){
+        background-color: rgb(255, 253, 247);
+        width: 85%;
+        margin: auto;
+        /* margin-left: 40px; */
+        height: auto;
+        margin-top: 260px;
+        padding: 25px 40px;
+        box-sizing: border-box;
+    }
+    #card1 h1{
+        font-size: 3em;
+    }
+    #card1 form{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #bottom-bar #container{
+        grid-template-columns: repeat(3,1fr);
+    }
+   
+}
+
+@media screen and (max-width:900px) {
+    #card1 h1{
+        font-size: 2.3em;
+    }
+    #card2  div{
+        /* bottom: 500px; */
+        top: 600px;
+      }
+    /* #menu{ */
+        /* margin-left: 25px; */
+    /* } */
+    #menu #card{
+        width: 80%;
+        margin: auto;
+    }
+    #work #container{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #plan #container{
+        width: 95%;
+        padding: 30px 0px;
+        margin: auto;
+    }
+    #start #container div:nth-child(2) h1{
+        font-size: 2.5em;
+    }
+    #start #container div:nth-child(2) p{
+        font-size: 0.9em;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:750px){
+    nav{
+        width: 100%;
+    }
+    nav .left img{
+        margin-top: -250px;
+    }
+    #main{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    #card1 p,#card1 form{
+    display: none;
+    }
+    #card1 button{
+        display: block;
+        /* padding: -30px 5px; */
+    }
+    #card2{
+        width: 100%;
+        /* margin: auto; */
+    }
+    #card2  div{
+      /* bottom: 100px; */
+      top: 640px;
+    }
+    #work #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #saying .container #jscontainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #start #container{
+        width: 100%;
+    }
+    #menu #card .small-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #plan #container #card {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #details #container >div:nth-child(1){
+        margin-top: 184px;
+    }
+    #details #container >div:nth-child(1) h1{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:600px){
+    footer #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer #container  div{
+        display: flex;
+    }
+    #details #container >div:nth-child(1){
+        margin-top: 164px;
+    }
+    #details #container >div:nth-child(1) h1{
+        font-size: 2.5em;
+    }
+    #card2 div{
+        /* bottom: 120px; */
+        top: 640px;
+    }
+    #menu #card {
+        width: 91%;
+    }
+    #menu #card h1{
+        font-size: 2.5em;
+    }
+    #menu #card p{
+        font-size: 1em;
+    }
+    #menu #card .small-card {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #plan #container h1 {
+        font-size: 1.37em;
+    }
+    #plan #container #card {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #bottom-bar #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #bottom-bar #container img{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:450px){
+    
+    nav .left img{
+    margin-top: -296px;
+    }
+    #bottom-bar #container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #bottom-bar #container img{
+        padding: 0px;
+    }
+    nav #nav-menu a{
+        width: 150px;
+        margin-left: -200px;
+    }
+    nav .left img{
+        margin-top: -308px;
+    }
+    #card1 h1{
+        font-size: 1.5em;
+    }
+    #work h1{
+        font-size: 1.5em;
+    }
+    #menu #card h1 {
+        font-size: 1.5em;
+    }
+    #plan #container h1{
+        font-size: 1.2em;
+    }
+    #plan #container p{
+        font-size: 0.9em;
+    }
+    #details #container >div:nth-child(1) h1{
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+    #details #container >div:nth-child(1) p{
+        line-height: 20px;
+        font-size: 1em;
+    }
+    #start #container >div:nth-child(2) h1{
+        font-size: 1.5em;
+    }
+    #start #container >div:nth-child(2) form{
+        display: none;
+    }
+    #saying .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:300px){
+nav,#main,#work,#menu,#plan,#saying,#details,#start,#bottom-bar{
+    width: 100%;
+    margin: auto;
+}
+nav .left img{
+    margin-top: -279px;
+}
+}

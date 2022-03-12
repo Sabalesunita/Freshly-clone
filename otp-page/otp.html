@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ENTER OTP</h1>
+        <div class="userinput">
+            <input type="text" id="txt1" maxlength="1" onkeyup="move(event, '', 'txt1', 'txt2')">
+            <input type="text" id="txt2" maxlength="1" onkeyup="move(event, 'txt1', 'txt2', 'txt3')">
+            <input type="text" id="txt3" maxlength="1" onkeyup="move(event, 'txt2', 'txt3', 'txt4')">
+            <input type="text" id="txt4" maxlength="1" onkeyup="move(event, 'txt3', 'txt4', '')">
+        </div>
+        <button onclick="confirm()">CONFIRM</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function move(e,p,c,n){
+        var length = document.getElementById(c).value.length;
+        var maxlength = document.getElementById(c).getAttribute("maxlength");
+        if(length == maxlength){
+            if(n !== ""){
+                document.getElementById(n).focus();
+            }
+        }
+        if(e.key === "Backspace"){
+            if(p !== ""){
+                document.getElementById(p).focus();
+            }
+        }
+    }
+
+    function confirm(){
+       
+        var one = document.getElementById("txt1").value;
+        var two = document.getElementById("txt2").value;
+        var three = document.getElementById("txt3").value;
+        var four = document.getElementById("txt4").value;
+        var otp = one + two + three + four;
+        if(otp=="1234"){
+            alert("Payment Success");
+            //go to home page
+            window.location.href = "/home-page/home.html"
+        }
+        else{
+            alert("Wrong OTP");
+        }
+    }
+
+</script>
